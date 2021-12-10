@@ -15,6 +15,7 @@ def wordChoice():
     content = file.readlines()
     word = content[randint(0, len(content))]
     file.close()
-    return word.upper()
+    return word.upper().strip()
     
 print(wordChoice())
+    
